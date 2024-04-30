@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 style="text-align: center;">Rock-Paper-Scissors</h1>
+
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="weapon" id="scoreInfo">Choose your weapon</h2>
+            <h3 class="score-message" id="scoreMessage">First to score 5 points wins the game</h3>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">&#x2753</div>
+                    <div class="score" id="playerScore">Player: 0</div>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computerSign">&#x2753</div>
+                    <div class="score" id="computerScore">Player: 0</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <div class="sign">&#x1FAA8</div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <div class="sign">&#x1F4C4</div>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+                <div class="sign">&#x2702</div>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer"> Copyright &copy 2024 ganeshpendela</footer>
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
 </body>
 </html>
