@@ -2,6 +2,10 @@
 
 This is a simple JavaScript implementation of the classic Rock Paper Scissors game.
 
+## Live Preview
+You can view the live preview of the Rock-Paper-Scissors game [here](https://ganeshpendela.github.io/Rock-Paper-Scissors/).
+
+
 ## How to Play
 
 1. The game consists of 5 rounds.
